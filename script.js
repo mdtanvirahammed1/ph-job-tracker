@@ -25,12 +25,12 @@ function renderJobs() {
     document.getElementById("tabCount").innerText = data.length + " Jobs";
 
     if (data.length === 0) {
-        document.getElementById("emptyState").classList.remove("hidden");
+        document.getElementById("empty").classList.remove("hidden");
         updateDashboard();
         return;
     }
 
-    document.getElementById("emptyState").classList.add("hidden");
+    document.getElementById("empty").classList.add("hidden");
 
     data.forEach(job => {
         const div = document.createElement("div");
